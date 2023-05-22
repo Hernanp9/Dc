@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-toggle">
+          <span class="toggle-icon"></span>
+        </div>
+        <ul class="navbar-menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="assets/html/pulceras.html">pulceras</a></li>
+          <li><a href="assets/html/collares.html">collares</a></li>
+          <li><a href="assets/html/tobilleras.html">tobilleras</a></li>
+          <li><a href="assets/html/nuestrosclientes.html">Nuestros Clientes</a></li>
+        </ul>
+      </nav>
+
+      <script>
+        // jQuery
+        $(document).ready(function () {
+          $(".menu-icon").click(function () {
+            $(".menu ul").slideToggle();
+          });
+        });
+
+        // JavaScript puro
+        // document.querySelector('.menu-icon').addEventListener('click', function() {
+        //   document.querySelector('.menu ul').classList.toggle('active');
+        // });
+      </script>
+    </header>
+    <div class="banner">
+      <div class="capa"></div>
+    </div>
+    <h1 class="tituloPrincipal">Hippona</h1>
+
+    <div class="carrito">
+        <div class="cards">
+            <div class="card">
+                <h2 class="tituloCard">Pulceras</h2>
+                <img src="assets/img/card1.jpeg" alt="Producto" />
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="price">$19.99</span>
+                    <a href="assets/html/pulceras.html" class="btn">IR</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="tituloCard">collares</h2>
+                <img src="assets/img/card2.jpeg" alt="Producto" />
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="price">$19.99</span>
+                    <a href="assets/html/collares.html" class="btn">IR</a>
+                </div>
+            </div>
+       
+            <div class="card">
+                <h2 class="tituloCard">tobilleras</h2>
+                <img src="assets/img/card3.jpeg" alt="Producto" />
+                <div class="card-content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <span class="price">$19.99</span>
+                    <a href="assets/html/tobilleras.html" class="btn">IR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Mi Sitio Web.      Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</html>

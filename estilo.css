@@ -1,0 +1,322 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #e7c6ff;
+  
+}
+.navbar {
+  background-color:#c77dff ;
+  color: #5a189a;
+  font-weight: bolder;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.toggle-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #5a189a;
+  margin-bottom: 5px;
+}
+
+.navbar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-right: 10px;
+}
+
+.navbar-menu li a {
+  color: #5a189a;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #c77dff;
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+  }
+
+  .navbar-menu li a {
+    color: #5a189a;
+    text-shadow: 2px #5a189a;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+  }
+}
+
+
+  .tituloPrincipal{
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 75px;
+    color: #5a189a;
+    text-shadow: 3px black;
+    margin-top: 0;
+    
+  }
+
+ .banner{
+    position: relative;
+    widows: 100%;
+    height: calc(25vh - 40px);
+    background-image: url(/assets/img/baner.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+
+ }
+ .capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+ }
+
+ 
+@media screen and (min-width: 768px) {
+  .banner {
+    height: 50vh;
+  }
+}
+
+ .carrito{
+   
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e7c6ff;
+    
+ }
+ @media screen and (min-width: 768px) {
+  .carrito{
+    justify-content: space-between;
+    padding-left: 150px;
+  }
+  .cards {
+    display: flex;
+
+    
+  }
+  .card{
+    margin: 10px;
+    padding-right: 40px;
+    text-align: center;
+    border: unset #5a189a;
+  }
+
+  .card:hover{
+    transform: scale(1.1);
+    
+  }
+}
+ .card {
+    width: 300px;
+    background-color: #c77dff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 35px;
+    text-align: center;
+    
+  }
+  
+  .card img {
+    text-align: center;
+    width: 280;
+    height: 20vh;
+  padding-left: 20px;
+}
+  
+  .card img :hover{
+    transform: scaleZ(3px);
+  }
+  .card-content {
+    padding: 10px;
+    color: #5a189a;
+  }
+  
+  .card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content .price {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .tituloCard{
+    color: #5a189a;
+  }
+  .card-content .btn {
+    display: inline-block;
+    background-color:#5a189a ;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    
+  }
+  
+  .card-content .btn:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.2);
+  }
+
+  
+  
+  footer {
+    background-color: #c77dff;
+    color: #5a189a;
+    margin: 0px;
+  padding: 10px;
+  
+  }
+  
+  .footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /*comienzo pagina de pulceras
+  */
+
+  .tituloPrincipalPulceras{
+    text-align: center;
+    padding: 40px;
+    font-size: 65px;
+    color: #5a189a;
+    text-decoration: underline;
+  }
+
+  .containerCards{
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #e7c6ff;
+  }
+
+
+
+  .carritoPulceras{
+   
+    padding-left: 40px;
+    background-color: #e7c6ff;
+    
+ }
+ @media screen and (min-width: 768px) {
+  .cardsPulceras{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+  }
+ 
+  .cardPulceras{
+    width: calc(25% - 10px); /* Ajusta el ancho según tus necesidades */
+    margin: 10px;
+    padding-right: 40px;
+    text-align: center;
+    border: unset #5a189a;
+  }
+
+  .cardPulceras:hover{
+    transform: scale(1.1);
+    
+  }
+}
+ .cardPulceras {
+    width: 300px;
+    background-color: #c77dff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 35px;
+    text-align: center;
+    
+  }
+  
+  .cardPulceras img {
+    text-align: center;
+    width: 280;
+    height: 20vh;
+  padding-left: 20px;
+}
+  
+  .cardPulceras img :hover{
+    transform: scaleZ(3px);
+  }
+  .card-content {
+    padding: 10px;
+    color: #5a189a;
+  }
+  
+  .card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .card-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content .price {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .tituloCard{
+    color: #5a189a;
+  }
+  .card-content .btn {
+    display: inline-block;
+    background-color:#5a189a ;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    
+  }
+  
+  .card-content .btn:hover {
+    background-color: black;
+    color: white;
+  }
