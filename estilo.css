@@ -184,29 +184,9 @@ body{
     background-color: #e7c6ff;
     
  }
- @media screen and (min-width: 768px) {
-  .cardsPulceras{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around;
-  }
- 
-  .cardPulceras{
-    width: calc(25% - 10px); /* Ajusta el ancho según tus necesidades */
-    margin: 10px;
-    padding-right: 40px;
-    text-align: center;
-    border: unset #5a189a;
-  }
-
-  .cardPulceras:hover{
-    transform: scale(1.1);
-    
-  }
-}
  .cardPulceras {
-    width: 300px;
-    background-color: #c77dff;
+    width: 80vw;
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -263,4 +243,58 @@ body{
   .card-content .btn:hover {
     background-color: black;
     color: white;
+  }
+
+ @media screen and (min-width: 768px) {
+  .cardsPulceras{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+  }
+ 
+  .cardPulceras{
+    width: 25%; /* Ajusta el ancho según tus necesidades */
+    margin: 10px;
+    padding-right: 40px;
+    text-align: center;
+    border: unset #5a189a;
+  }
+
+  .cardPulceras:hover{
+    transform: scale(1.1);
+    
+  }
+}
+ 
+  /*nuestros clientes*/
+
+  .containerclientes{
+    border: solid 2px #5a189a;
+    text-align: center;
+  }
+
+  .containerCardsClientes{
+    margin-left: 10vw;
+    width: 65%;
+  
+  }
+
+
+
+  @media screen and (min-width: 768px) {
+    .containerclientes{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+    }
+   
+    .containerCardsClientes{
+      width: calc(25% - 10px); /* Ajusta el ancho según tus necesidades */
+      margin: 10px;
+      padding-right: 40px;
+      text-align: center;
+      border-radius: 10%;
+      background-color: aliceblue;
+    }
+  
   }
