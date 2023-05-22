@@ -396,22 +396,11 @@ body{
       padding-right: 40px;
       text-align: center;
       border-radius: 10%;
-      background-color: aliceblue;
+     
     }
+    
+  }
+
   
-  }
-
-  .nombreCliente{
-    background-color: #fcfcfc;
-    width: 50vw;
-    margin-left: 25vw;
-    margin-top: 10px;
-  }
-
-  .testimonio{
-    background-color: #5a189a;
-    color: #fcfcfc;
-    border-radius: 35%;
-    width: 50vw;
-    margin-left: 25vw;
-  }
+  
+ 
