@@ -6,67 +6,10 @@ body{
   background-color: #e7c6ff;
   
 }
-.navbar {
-  background-color:#c77dff ;
-  color: #5a189a;
-  font-weight: bolder;
-}
 
-.navbar-toggle {
-  display: none;
-  cursor: pointer;
-  padding: 10px;
-}
-
-.toggle-icon {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #5a189a;
-  margin-bottom: 5px;
-}
-
-.navbar-menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.container-fluid{
   display: flex;
-}
-
-.navbar-menu li {
-  margin-right: 10px;
-}
-
-.navbar-menu li a {
-  color: #5a189a;
-  text-decoration: none;
-  font-weight: 800;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar-toggle {
-    display: block;
-  }
-
-  .navbar-menu {
-    display: none;
-    flex-direction: column;
-    padding: 10px;
-    background-color: #c77dff;
-  }
-
-  .navbar-menu li {
-    margin: 10px 0;
-  }
-
-  .navbar-menu li a {
-    color: #5a189a;
-    text-shadow: 2px #5a189a;
-  }
-
-  .navbar-menu.active {
-    display: flex;
-  }
+  justify-content: space-between;
 }
 
 
@@ -104,6 +47,7 @@ body{
 @media screen and (min-width: 768px) {
   .banner {
     height: 50vh;
+    display: none;
   }
 }
 
